@@ -1,3 +1,6 @@
+npx create-expo-app seven-generations
+cd seven-generations
+npm start
 ---
 id: intro-react-native-components
 title: Core Components and Native Components
@@ -34,13 +37,26 @@ React Native has many Core Components for everything from controls to activity i
 
 | React Native UI Component | Android View   | iOS View         | Web Analog              | Description                                                                                           |
 | ------------------------- | -------------- | ---------------- | ----------------------- | ----------------------------------------------------------------------------------------------------- |
-| `<View>`                  | `<ViewGroup>`  | `<UIView>`       | A non-scrolling `<div>` | A container that supports layout with flexbox, style, some touch handling, and accessibility controls |
+| `<View>`/screens
+- HomeScreen.js
+- StudioScreen.js
+- MediaScreen.js
+- CommunityScreen.js
+- ProfileScreen.js
+-
+-               npm install @react-navigation/native
+npm install @react-navigation/bottom-tabs
+
+| `<ViewGroup>`  | `<UIView>`       | A non-scrolling `<div>` | A container that supports layout with flexbox, style, some touch handling, and accessibility controls |
 | `<Text>`                  | `<TextView>`   | `<UITextView>`   | `<p>`                   | Displays, styles, and nests strings of text and even handles touch events                             |
 | `<Image>`                 | `<ImageView>`  | `<UIImageView>`  | `<img>`                 | Displays different types of images                                                                    |
 | `<ScrollView>`            | `<ScrollView>` | `<UIScrollView>` | `<div>`                 | A generic scrolling container that can contain multiple components and views                          |
 | `<TextInput>`             | `<EditText>`   | `<UITextField>`  | `<input type="text">`   | Allows the user to enter text                                                                         |
 
-In the next section, you will start combining these Core Components to learn about how React works. Have a play with them here now!
+In the next section, you will start combining these Core Components to learn about how React works. Have a play with them here now!npm install firebase
+
+npm install @stripe/stripe-react-native
+
 
 ```SnackPlayer name=Hello%20World
 import React from 'react';
